@@ -16,44 +16,46 @@
 
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><box size="0.22 0.08 0.05"/></geometry>
+      <geometry><box size="0.15 0.15 0.05"/></geometry>
       <material name="carbon_fiber"/>
     </visual>
     
+    <!-- Arms at 45 degrees for square config -->
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0.6"/> <geometry><box size="0.418 0.02 0.015"/></geometry>
+      <origin xyz="0 0 0" rpy="0 0 0.785"/> <geometry><box size="0.424 0.02 0.015"/></geometry>
       <material name="carbon_fiber"/>
     </visual>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 -0.6"/> 
-      <geometry><box size="0.418 0.02 0.015"/></geometry>
+      <origin xyz="0 0 0" rpy="0 0 -0.785"/> 
+      <geometry><box size="0.424 0.02 0.015"/></geometry>
       <material name="carbon_fiber"/>
     </visual>
 
+    <!-- Motors at symmetric square positions -->
     <visual>
-      <origin xyz="0.16 0.11 0.02" rpy="0 0 0"/>
+      <origin xyz="0.15 0.15 0.02" rpy="0 0 0"/>
       <geometry><cylinder radius="0.02" length="0.02"/></geometry>
       <material name="motor_metal"/>
     </visual>
     <visual>
-      <origin xyz="0.16 -0.11 0.02" rpy="0 0 0"/>
+      <origin xyz="0.15 -0.15 0.02" rpy="0 0 0"/>
       <geometry><cylinder radius="0.02" length="0.02"/></geometry>
       <material name="motor_metal"/>
     </visual>
     <visual>
-      <origin xyz="-0.16 0.11 0.02" rpy="0 0 0"/>
+      <origin xyz="-0.15 0.15 0.02" rpy="0 0 0"/>
       <geometry><cylinder radius="0.02" length="0.02"/></geometry>
       <material name="motor_metal"/>
     </visual>
     <visual>
-      <origin xyz="-0.16 -0.11 0.02" rpy="0 0 0"/>
+      <origin xyz="-0.15 -0.15 0.02" rpy="0 0 0"/>
       <geometry><cylinder radius="0.02" length="0.02"/></geometry>
       <material name="motor_metal"/>
     </visual>
 
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><box size="0.324 0.264 0.063"/></geometry>
+      <geometry><box size="0.34 0.34 0.063"/></geometry>
     </collision>
   </link>
 </robot>
